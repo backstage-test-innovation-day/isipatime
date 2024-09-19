@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-beertime
+  name: nginx-ipatime
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx-beertime
+      app: nginx-ipatime
   template:
     metadata:
       labels:
-        app: nginx-beertime
+        app: nginx-ipatime
     spec:
       containers:
       - name: nginx-beertime
-        image: chrislse/nginx-beertime:latest
+        image: chrislse/nginx-ipatime:latest
         ports:
         - containerPort: 8080
