@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/nginx-beertime:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/nginx-ipatime:latest
 
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -50,4 +50,4 @@ jobs:
         oc replace -f openshift/deployment.yaml
         oc replace -f openshift/service.yaml
         oc replace -f openshift/route.yaml
-        oc rollout status deployment/nginx-beertime -w --timeout=3m
+        oc rollout status deployment/nginx-ipatime -w --timeout=3m
