@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: isbeertime-api
+  description: |
+    Awesome description to the api.
+  links:
+    - title: Website
+      url: https://isbeertime.apps.sandbox-m3.1530.p1.openshiftapps.com/
+    - title: Documentation
+      url: https://developer.swedbank.com/admin/app/home
+    - title: Storybook
+      url: https://backstage.io/storybook
+  annotations:
+    github.com/project-slug: backstage-test-innovation-day/backstage
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://www.webpagetest.org/result/240919_BiDcFR_6NE/
+spec:
+  type: library
+  owner: Chris
+  lifecycle: experimental
