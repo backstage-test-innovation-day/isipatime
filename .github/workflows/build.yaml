@@ -47,7 +47,7 @@ jobs:
 
     - name: Apply Kubernetes manifests
       run: |
-        oc replace -f openshift/deployment.yaml
-        oc replace -f openshift/service.yaml
-        oc replace -f openshift/route.yaml
+        oc replace -f openshift/deployment.yaml || oc create -f openshift/deployment.yaml
+        oc replace -f openshift/service.yaml || oc create -f openshift/service.yaml
+        oc replace -f openshift/route.yaml || oc create -f openshift/route.yaml
         oc rollout status deployment/nginx-ipatime -w --timeout=3m
