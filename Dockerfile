@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 RUN chmod -R g+w /var/cache/nginx /var/run /etc/nginx/conf.d /etc/nginx/nginx.conf
 
-COPY ipa_yes.gif /usr/share/nginx/html/ipa_yes.gif
+COPY yes.gif /usr/share/nginx/html/yes.gif
 
 # Expose port 8080
 EXPOSE 8080
