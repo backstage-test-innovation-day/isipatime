@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: isbeertime-api
+  name: isipatime-api
   description: |
     Awesome description to the api.
   links:
     - title: Website
-      url: https://isbeertime.apps.sandbox-m3.1530.p1.openshiftapps.com/
+      url: https://isipatime.apps.sandbox-m3.1530.p1.openshiftapps.com/
     - title: Documentation
       url: https://developer.swedbank.com/admin/app/home
     - title: Storybook
