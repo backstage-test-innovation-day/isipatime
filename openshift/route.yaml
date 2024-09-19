@@ -1,12 +1,12 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: nginx-beertime-route
+  name: nginx-ipatime-route
 spec:
-  host: isbeertime.apps.sandbox-m3.1530.p1.openshiftapps.com
+  host: isipatime.apps.sandbox-m3.1530.p1.openshiftapps.com
   to:
     kind: Service
-    name: nginx-beertime
+    name: nginx-ipatime
   port:
     targetPort: 8080
   tls:
